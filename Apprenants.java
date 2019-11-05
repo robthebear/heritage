@@ -36,7 +36,7 @@ this.systeme = systeme;
         }else if (systeme == Os.LINUX) {
             sys = "Tu vas bosser sur Linux ! Tu aimes la liberté !";
         }else if (systeme == Os.MAC) {
-            sys = "Tu vas bosser sur Mac ! Ouille ! Mais bon, un linux se cache sous le capot…";
+            sys = "Tu vas bosser sur Mac ! Wahou ! Mais tu as le plus de chance toi!!!";
         }
         System.out.println( sys +"\nTon lieu de travail est à "+lieuDeTravail+"." );
     }
