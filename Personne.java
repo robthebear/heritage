@@ -1,4 +1,6 @@
-public class Personne{
+package heritage;
+
+public class Personne {
     String prenom;
     int age;
 
@@ -12,11 +14,11 @@ this.age = age;
         
     }
     public void manger(String fruit) {
-        System.out.println("Miam miam, c’est bon ce fruit, " +fruit+ "!");
+        System.out.println("Miam miam, c’est bon ce " +fruit+ "!");
         
     }
     public void bonjour() {
-        System.out.println("Bonjour, je suis prenom et j’ai "+age+" ans");
+        System.out.println("Bonjour, je suis "+prenom+" et j’ai "+age+" ans");
         
     }
 }

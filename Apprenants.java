@@ -1,4 +1,6 @@
-public class Apprenants extends Personne{
+package heritage;
+
+public class Apprenants extends Personne {
 String lieuDeTravail;
 Os systeme;
     
@@ -25,16 +27,17 @@ this.systeme = systeme;
     }
 
     public void bonjour() {
+        super.bonjour();
         String sys = "";
         if (systeme == Os.INDEFINI) {
             sys = "Tu ne connais pas encore ton OS !";
-        } if (systeme == Os.WINDOWS) {
+        }else if (systeme == Os.WINDOWS) {
             sys = "Tu vas bosser sur Windows ! Super, comme en formation !";
-        } if (systeme == Os.LINUX) {
+        }else if (systeme == Os.LINUX) {
             sys = "Tu vas bosser sur Linux ! Tu aimes la liberté !";
-        } if (systeme == Os.MAC) {
+        }else if (systeme == Os.MAC) {
             sys = "Tu vas bosser sur Mac ! Ouille ! Mais bon, un linux se cache sous le capot…";
         }
-        System.out.println("Bonjour, je suis "+prenom+" et j’ai "+age+" ans"+ sys +"\nTon lieu de travail est à "+lieuDeTravail+"." );
+        System.out.println( sys +"\nTon lieu de travail est à "+lieuDeTravail+"." );
     }
 }
